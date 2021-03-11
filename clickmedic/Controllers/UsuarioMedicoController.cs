@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using clickmedic.Models;
+using clickmedic.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace clickmedic.Controllers
@@ -14,18 +16,18 @@ namespace clickmedic.Controllers
     {
         private readonly ILogger<UsuarioMedicoController> _logger;
 
+        
+
         public UsuarioMedicoController(ILogger<UsuarioMedicoController> logger)
         {
             _logger = logger;
         }
 
         [HttpGet]
-        public IEnumerable<Usuario> Get()
+        public DatosUsuarioRepuesta Get()
         {
-            using (var context = new MediclickContext())
-            {
-                return context.Usuarios.ToList();
-            }
+            var usuarios = UserService.GetAllUsers();
+            return usuarios;
         }
     }
 }

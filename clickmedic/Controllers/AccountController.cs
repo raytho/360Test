@@ -12,29 +12,17 @@ using Microsoft.Extensions.Logging;
 namespace clickmedic.Controllers
 {
     [ApiController]
-    [Route("demo/v1/[controller]")]
     public class AccountController : ControllerBase
     {
-        private readonly ILogger<AccountController> _logger;
-        private readonly string _connectionString;
-
-
-        public AccountController(IConfiguration configuration, ILogger<AccountController> logger)
-        {
-            _logger = logger;
-            _connectionString = configuration["ConnectionStrings:DefaultConnection"];
-        }
-
-        [HttpGet]
+        [HttpGet("/demo/v1/account")]
         public UserDataResponse Get()
         {
             var usuarios = UserService.GetAllUsers();
             return usuarios;
         }
 
-        [HttpGet("{id}")]
-        [Route("demo/v1/[controller]/{id}")]
-        public UserDataResponse GetUser(int id)
+        [HttpGet("/demo/v1/account/{id}/record")]
+        public UserDataResponse GetUserById(int id)
         {
             var usuarios = UserService.GetUserId(id);
             return usuarios;

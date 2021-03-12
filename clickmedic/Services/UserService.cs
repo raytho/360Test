@@ -46,6 +46,7 @@ namespace clickmedic.Services
         public static UserDataResponse GetUserId(int id)
         {
             var usuarioRespuesta = new UserDataResponse();
+            context.Alergias.ToList();
             var usuario = context.Usuarios.Where(u => u.UsuarioId == id).ToList();
             if(usuario != null)
             {

@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clickmedic", "clickmedic\clickmedic.csproj", "{C3ECE465-F408-4050-9B9D-8EEBF232D451}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clickmedic", "clickmedic\clickmedic.csproj", "{C508346D-3AFC-40AC-8766-B95115F06FEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +9,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C3ECE465-F408-4050-9B9D-8EEBF232D451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C3ECE465-F408-4050-9B9D-8EEBF232D451}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C3ECE465-F408-4050-9B9D-8EEBF232D451}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C3ECE465-F408-4050-9B9D-8EEBF232D451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C508346D-3AFC-40AC-8766-B95115F06FEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C508346D-3AFC-40AC-8766-B95115F06FEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C508346D-3AFC-40AC-8766-B95115F06FEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C508346D-3AFC-40AC-8766-B95115F06FEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

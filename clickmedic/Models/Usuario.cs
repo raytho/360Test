@@ -7,7 +7,7 @@ namespace clickmedic.Models
     {
         public int UsuarioId { get; set; }
         public int NumeroExpediente { get; set; }
-        public DateTime FechaUltimaConsulta { get; set; }
+        public string FechaUltimaConsulta { get; set; }
         public string TipoSangre { get; set; }
         public IEnumerable<Alergia> alergias { get; set; }
     }

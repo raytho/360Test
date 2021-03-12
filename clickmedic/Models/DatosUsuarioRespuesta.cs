@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace clickmedic.Models
 {
-    public class DatosUsuarioRepuesta
+    public class UserDataResponse
     {
         public int codigo { get; set; }
         public string mensaje { get; set; }
